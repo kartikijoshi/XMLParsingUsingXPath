@@ -8,6 +8,9 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 
@@ -37,6 +40,16 @@ public class MainClass {
         XPathExpression expr = xpath.compile("/PublishCustomerOrder/body/customerOrderObject/customerOrder/customerOrderConsignment/customerDeliveryDetails/location/retailstore/retailStoreID");
         String branchIdValue = (String) expr.evaluate(doc, XPathConstants.STRING);
         System.out.println("branchId Value in XML : " +branchIdValue);
+        
+      //Loop through <customerOrderLine>s
+        NodeList customerOrderLineNodeList = doc.getElementsByTagName("customerOrderLine"); 
+        if (customerOrderLineNodeList != null) {
+            for (int i = 1; i <= customerOrderLineNodeList.getLength(); i++) {
+            	String prodNum = (String) xpath.compile("/PublishCustomerOrder/body/customerOrderObject/customerOrder/customerOrderConsignment/customerOrderLine[" +i +"]/product/productNumber").evaluate(doc, XPathConstants.STRING);
+                String quantity = (String) xpath.compile("/PublishCustomerOrder/body/customerOrderObject/customerOrder/customerOrderConsignment/customerOrderLine[" +i +"]/quantityOrdered/number").evaluate(doc, XPathConstants.STRING);
+                System.out.println(prodNum +"  :: " +quantity);
+            }
+        }
         
 	}
 
