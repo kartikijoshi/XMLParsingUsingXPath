@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishCustomerOrder xmlns="http://soa.waitrose.co.uk/schema/ebm/PublishCustomerOrder">
+  <header>
+    <creationDateTime>2017-08-04T12:27:02.189+01:00</creationDateTime>
+    <languageCode>EN</languageCode>
+    <messageID>2dd623b</messageID>
+    <serviceID>0cd401ce4b1111e48770b172997e185e</serviceID>
+    <versionID>1.0.0</versionID>
+    <sender>
+      <logicalID>6ccd01ce4b1111e48770b172997e197g</logicalID>
+    </sender>
+  </header>
+  <body>
+    <publish>
+      <recordSetCount>1</recordSetCount>
+      <recordSetStartNumber>1.0</recordSetStartNumber>
+      <recordSetTotal>1</recordSetTotal>
+    </publish>
+    <customerOrderObject>
+      <customerOrder>
+        <customerOrderID>25000000</customerOrderID>
+        <orderStatusCode>Placed</orderStatusCode>
+        <customerOrderConsignment>
+          <consignmentStatusCode>Placed</consignmentStatusCode>
+          <customerOrderConsignmentID>25000000</customerOrderConsignmentID>
+          <deliveryScheduledFlag>1</deliveryScheduledFlag>
+          <fulfillmentServiceTypeCode>HD</fulfillmentServiceTypeCode>
+          <paymentStatusCode>UnPaid</paymentStatusCode>
+          <customerDeliveryDetails>
+            <deliveryCustomer>
+              <customerID>399541</customerID>
+              <firstName>SFSF</firstName>
+              <lastName>SFSS</lastName>
+              <salutation>MR</salutation>
+            </deliveryCustomer>
+            <location>
+              <displayCode>245160</displayCode>
+              <locationID>245160</locationID>
+              <address>
+                <addressID>245160</addressID>
+                <addressLine1>D M K NEWS</addressLine1>
+                <addressLine2>2 TRESHAM CRESCENT</addressLine2>
+                <city>YATELEY</city>
+                <countryCode>GB</countryCode>
+                <county>HANTS</county>
+                <geoPhysicalLocationCoOrdinateValue>
+                  <lat>51.41829</lat>
+                  <long>-0.75512</long>
+                </geoPhysicalLocationCoOrdinateValue>
+                <postalCode>GU466FR</postalCode>
+              </address>
+              <retailstore>
+                <retailStoreID>198</retailStoreID>
+              </retailstore>
+            </location>
+            <telephone>
+              <completeNumber>32534263654</completeNumber>
+              <contactMethodTypeCode>HomePhone</contactMethodTypeCode>
+            </telephone>
+          </customerDeliveryDetails>
+          <customerFulfillmentSlot>
+            <slotEndDateTime>2017-08-06T18:00:00.000+01:00</slotEndDateTime>
+            <slotStartDateTime>2017-08-06T16:00:00.000+01:00</slotStartDateTime>
+          </customerFulfillmentSlot>
+          <customerOrderLine>
+            <quantityOrdered>
+              <code>Unit</code>
+              <number>21.0</number>
+            </quantityOrdered>
+            <customerOrderLineHistory>
+              <sellingItem>
+                <description>essential Waitrose British chicken 2 part boned breasts (500g)</description>
+                <loanStockFlag>0</loanStockFlag>
+                <name>essential Waitrose British chicken 2 part boned breasts (500</name>
+                <sellingItemID>578470</sellingItemID>
+                <product>
+                  <description>essential Waitrose British chicken 2 part boned breasts (500g)</description>
+                  <name>essential Waitrose British chicken 2 part boned breasts (500</name>
+                  <productNumber>578470</productNumber>
+                </product>
+              </sellingItem>
+            </customerOrderLineHistory>
+            <product>
+              <description>essential Waitrose British chicken 2 part boned breasts (500g)</description>
+              <name>essential Waitrose British chicken 2 part boned breasts (500</name>
+              <productNumber>578470</productNumber>
+            </product>
+          </customerOrderLine>
+          <customerOrderLine>
+            <quantityOrdered>
+              <code>Unit</code>
+              <number>8.0</number>
+            </quantityOrdered>
+            <customerOrderLineHistory>
+              <sellingItem>
+                <description>5p Carrier Bag (Each)</description>
+                <loanStockFlag>0</loanStockFlag>
+                <name>5p Carrier Bag (Each)</name>
+                <sellingItemID>803691</sellingItemID>
+                <product>
+                  <description>5p Carrier Bag (Each)</description>
+                  <name>5p Carrier Bag (Each)</name>
+                  <productNumber>803691</productNumber>
+                </product>
+              </sellingItem>
+            </customerOrderLineHistory>
+            <product>
+              <description>5p Carrier Bag (Each)</description>
+              <name>5p Carrier Bag (Each)</name>
+              <productNumber>803691</productNumber>
+            </product>
+          </customerOrderLine>
+          <location>
+            <retailstore>
+              <retailStoreID>198</retailStoreID>
+            </retailstore>
+          </location>
+        </customerOrderConsignment>
+        <customerOrderControlTransaction>
+          <changeReasonCode>None</changeReasonCode>
+        </customerOrderControlTransaction>
+        <orderCustomer>
+          <customerID>149951471</customerID>
+          <firstName>CHJ</firstName>
+          <lastName>KJKJ</lastName>
+          <salutation>MR</salutation>
+          <eCommerceCustomer>
+            <eCommerceCustomerID>399541</eCommerceCustomerID>
+            <eCommerceCustomerOrderCount>6</eCommerceCustomerOrderCount>
+            <myWaitroseMembershipFlag>1</myWaitroseMembershipFlag>
+            <paperCustomerStatementFlag>0</paperCustomerStatementFlag>
+            <textConsentFlag>1</textConsentFlag>
+          </eCommerceCustomer>
+        </orderCustomer>
+      </customerOrder>
+    </customerOrderObject>
+  </body>
+</PublishCustomerOrder>
